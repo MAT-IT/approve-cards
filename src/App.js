@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import ApproveCards from "./ApproveCards";
+import faker from'faker';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        backgroundColor: "lightblue",
+        display: "grid",
+        minHeight: "100vh",
+        placeContent: "center",
+      }}
+    >
+      <ApproveCards name="Mark"  date="2011" avatar={faker.image.image()}/>
+      <ApproveCards name="Nahid"  date="2015" avatar={faker.image.image()}/>
+      <ApproveCards name="Zahid" date="2014" avatar={faker.image.image()}/>
     </div>
   );
-}
+};
 
 export default App;
