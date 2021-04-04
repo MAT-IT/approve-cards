@@ -2,7 +2,7 @@
 
 
 const ApproveCards =(props)=>{
-    const {name,date,avatar}=props;
+    const {name,date,avatar,children}=props;
     return(
     <div class="ui card">
         <div class="image">
@@ -17,12 +17,7 @@ const ApproveCards =(props)=>{
                 {name} is an art director living in New York.
             </div>
         </div>
-        <div class="extra content">
-            <a>
-                <i class="user icon"></i>
-                22 Friends
-            </a>
-        </div>
+        {children}
     </div>
     )
 }
