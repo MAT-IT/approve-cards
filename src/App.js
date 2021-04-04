@@ -1,6 +1,7 @@
 import React from "react";
 import ApproveCards from "./ApproveCards";
 import faker from'faker';
+import extraContetnt from "./extraContetnt";
 const App = () => {
   return (
     <div
@@ -11,9 +12,10 @@ const App = () => {
         placeContent: "center",
       }}
     >
-      <ApproveCards name="Mark"  date="2011" avatar={faker.image.image()}/>
+      <ApproveCards name="Mark"  date="2011" avatar={faker.image.image()}><extraContetnt Friends = "22"/></ApproveCards>
       <ApproveCards name="Nahid"  date="2015" avatar={faker.image.image()}/>
       <ApproveCards name="Zahid" date="2014" avatar={faker.image.image()}/>
+      
     </div>
   );
 };
