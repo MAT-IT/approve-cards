@@ -1,7 +1,7 @@
-import react from "react";
+import React from "react";
 
 
-const ApproveCards =(props)=>{
+const CommentDetail =(props)=>{
     const {name,date,avatar,content}=props;
     return(        
         <div class="comment">
@@ -25,4 +25,4 @@ const ApproveCards =(props)=>{
     )
 }
 
-export default ApproveCards;
+export default CommentDetail;
