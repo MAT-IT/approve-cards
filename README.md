@@ -1,5 +1,6 @@
 <!-- #added extra library 
-yarn add faker
+ add faker
+ add  (as link) semantic.min.css
 -->
 
 

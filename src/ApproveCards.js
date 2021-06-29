@@ -1,24 +1,27 @@
-
+import react from "react";
 
 
 const ApproveCards =(props)=>{
-    const {name,date,avatar,children}=props;
-    return(
-    <div class="ui card">
-        <div class="image">
-            <img src={avatar}/>
-        </div>
-        <div class="content">
-            <a class="header">{name}</a>
-            <div class="meta">
-                <span class="date">Joined in {date}</span>
+    const {name,date,avatar,content}=props;
+    return(        
+        <div class="comment">
+            <a href="/" className="avatar">
+                
+                <img alt="avatar" src={avatar}/>
+            </a>
+            <div className="content">
+                <a href="/" className="autor">
+                   Name : {name}
+                </a>
+                <div className="metadata">
+                    <span className="date">Update : {date}</span>
+                </div>
+                <div className="text">
+                    {content}
+                </div>
             </div>
-            <div class="description">
-                {name} is an art director living in New York.
-            </div>
         </div>
-        {children}
-    </div>
+     
     )
 }
 
